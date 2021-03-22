@@ -172,10 +172,10 @@ input[type="checkbox"]{
   a.page-link{
     font-size: 1rem;
   }
-  .page-item {
-    padding: 5px;
-  }
   .container{
     padding: 0 15px 20px;
+  }
+  .btn-wrap {
+    align-self: flex-end;
   }
 }

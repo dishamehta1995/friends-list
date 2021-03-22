@@ -45,7 +45,7 @@ export const AddFriend = ({details}) => {
                 required />
                 <p className='error'>{error}</p>
                 <div className='align-right'>
-                    <span className='description'>Sort by Fav</span>
+                    <span className='description'>Sort by Favorite</span>
                     <input 
                         type='checkbox'
                         onClick={(e) => sortFav(e.target.checked)}
