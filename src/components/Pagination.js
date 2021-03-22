@@ -27,7 +27,7 @@ const Pagination = ({ postsPerPage, totalPosts, paginate, currentPage }) => {
         </li> :''}
         {pageNumbers.slice(prevPageList,pageSet).map(number => (
             <li key={number} className='page-item'>
-            <a onClick={() => paginate(number)} href='!#' className={(currentPage == number)?'page-link active' : 'page-link' }>
+            <a onClick={() => paginate(number)} href='javascript:void(0)' className={(currentPage == number)?'page-link active' : 'page-link' }>
               {number}
             </a>
           </li>

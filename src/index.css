@@ -151,8 +151,3 @@ input[type="checkbox"]{
 .caption{
   color: #111;
 }
-#root{
-  display: flex;
-  align-items: center;
-  height: 100%;
-}
