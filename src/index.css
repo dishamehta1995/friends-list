@@ -125,7 +125,7 @@ input[type="checkbox"]{
   padding: 10px;
 }
 .btn-border:hover{
-  background-color: #9e9e9e;
+  background-color: #e0e0e0;
   transform: scale(1.1);
 }
 .page-item:hover .page-link,
@@ -150,4 +150,32 @@ input[type="checkbox"]{
 }
 .caption{
   color: #111;
+}
+@media (max-width:599px){
+  .list-item, .navbar{
+    flex-direction: column;
+  }
+  .navbar {
+    margin: 0 -15px 20px;   
+  }
+  .wrapper{
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .search-bar {
+    margin: 25px 0 15px;
+  }
+  .btn-wrap svg {
+    width: 15px;
+    height: 15px;
+  }
+  a.page-link{
+    font-size: 1rem;
+  }
+  .page-item {
+    padding: 5px;
+  }
+  .container{
+    padding: 0 15px 20px;
+  }
 }

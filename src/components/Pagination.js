@@ -2,7 +2,7 @@ import React,{useState} from 'react';
 
 const Pagination = ({ postsPerPage, totalPosts, paginate, currentPage }) => {
   const pageNumbers = [];
-  const [pageSet,setPageSet] = useState(10)
+  const [pageSet,setPageSet] = useState(5)
   const [prevPageList,setPrevPageList] = useState(0)
 
   for (let i = 1; i <= Math.ceil(totalPosts / postsPerPage); i++) {
@@ -10,18 +10,18 @@ const Pagination = ({ postsPerPage, totalPosts, paginate, currentPage }) => {
   }
 
   const handlePrev = () =>{
-      setPageSet(pageSet-10)
-      setPrevPageList(prevPageList-10)
+      setPageSet(pageSet-5)
+      setPrevPageList(prevPageList-5)
     }
     const handleNext = () =>{
       setPrevPageList(pageSet)
-      setPageSet(pageSet+10)
+      setPageSet(pageSet+5)
   }
   return (
       <nav>
       <ul className='pagination'>
         {prevPageList !==0 ? <li className='page-item'>
-            <a onClick={() => handlePrev()} href='!#' className='page-link'>
+            <a onClick={() => handlePrev()} href='javascript:void(0)' className='page-link'>
                 Prev
             </a>
         </li> :''}
@@ -33,8 +33,8 @@ const Pagination = ({ postsPerPage, totalPosts, paginate, currentPage }) => {
           </li>
         ))}
         {console.log(prevPageList)}
-        {prevPageList !== (pageNumbers.length - 10) ? <li className='page-item'>
-            <a onClick={() => handleNext()} href='!#' className='page-link'>
+        {prevPageList !== (pageNumbers.length - 5) ? <li className='page-item'>
+            <a onClick={() => handleNext()} href='javascript:void(0)' className='page-link'>
                 Next
             </a>
         </li>:'' }
