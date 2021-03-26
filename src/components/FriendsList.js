@@ -11,7 +11,7 @@ export const FriendsList = () => {
     useEffect(() => {
         const fetchList = async () => {
             const res = await fetch(`https://dishamehta1995.github.io/dummydata/data.json`);
-            const data = await res.json();
+            const data = [],
             loadFriends(data);
         }
         fetchList();
